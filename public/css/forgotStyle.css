@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+}
+input,label,h1{
+    position:relative;
+    top:100px;
+    left:100px;
+}
+input{
+    width:400px;
+    height:30px;
+}
+label,h1{
+    font-size:30px;
+    color:white;
+    font-weight: bolder;
+}
+button{
+    position:relative;
+    top:100px;
+    left:100px;
+    width:100px;
+    height:35px;
+    border-radius:10px;
+    background-color: lightgray;
+}

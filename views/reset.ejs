@@ -1,0 +1,55 @@
+<!--<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>project</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="i.js"></script>
+</head>
+<body>-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>project</title>
+        <link rel="stylesheet" href="./css/resetStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div id="mydiv">
+      <div id="mydivheader">Click here to move</div>
+      <div id="divButton">
+      <button class="button" id="red" onclick="changeColor(this)">red</button>
+      <button class="button" id="green" onclick="changeColor(this)">green</button>
+      <button class="button" id="blue" onclick="changeColor(this)">blue</button>
+      <button class="button" id="yellow" onclick="changeColor(this)">yellow</button>
+      <button class="button" id="magenta" onclick="changeColor(this)">pink</button>
+      <button class="button" id="orange" onclick="changeColor(this)">orange</button>
+      <button class="button" id="cyan" onclick="changeColor(this)">cyan</button>
+      <button class="button" id="purple" onclick="changeColor(this)">purple</button>
+      <button class="button" id="brown" onclick="changeColor(this)">brown</button>
+    </div>
+    </div>
+        <div class="main">  	
+                <div>
+                    <form method="post"  action="/reset" onsubmit="submitForm()">
+                        <h1>Reset Password</h1>
+                        <label><%= userEmail %></label>
+                        <input type="password" placeholder="password" class="password" name="password" onblur="validatePassword(0)" onselect="selectedRange(0)">
+                        <button class="button button1" type="button" onclick="showText('show',0)" type="button">show</button>
+                        <span class="sp" id="passerror0" style="display:none">enter valid email address</span>
+                        <div style="display:none;" id="show"></div>
+                        <!--<input  style="left:-35px" type="password" class="password" placeholder="confirm password" name="cpassword" onblur="validatePassword(1)" onselect="selectedRange(1)">
+                        <button class="button button1" type="button" onclick="showText('show1',1)" type="button">show</button>
+                        <div style="display:none;" id="show1"></div>
+                        <span class="sp" id="passerror1" style="display:none">enter valid email address</span>-->
+                        <button type="submit">update password</button>
+                    </form>
+                </div>    
+        </div>
+        <script type="text/javascript" src="./css/validation1.js"></script>
+        <script type="text/javascript" src="./move.js"></script>
+        <script type="text/javascript" src="./css/password1.js"></script>
+        
+    </body>
+    </html>
+    

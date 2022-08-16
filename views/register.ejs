@@ -1,0 +1,73 @@
+<!--<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>project</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="i.js"></script>
+</head>
+<body>-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>project</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div id="mydiv">
+      <div id="mydivheader">Click here to move</div>
+      <div id="divButton">
+      <button class="button" id="red" onclick="changeColor(this)">red</button>
+      <button class="button" id="green" onclick="changeColor(this)">green</button>
+      <button class="button" id="blue" onclick="changeColor(this)">blue</button>
+      <button class="button" id="yellow" onclick="changeColor(this)">yellow</button>
+      <button class="button" id="magenta" onclick="changeColor(this)">pink</button>
+      <button class="button" id="orange" onclick="changeColor(this)">orange</button>
+      <button class="button" id="cyan" onclick="changeColor(this)">cyan</button>
+      <button class="button" id="purple" onclick="changeColor(this)">purple</button>
+      <button class="button" id="brown" onclick="changeColor(this)">brown</button>
+    </div>
+    </div>
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+                <div class="signup">
+                    <form method="post"  action="/register" onsubmit="submitForm()">
+                        <!--action="land.html"-->
+                        <label for="chk" aria-hidden="true" id="sign">Sign up</label>
+                        <input type="text" name="userName" placeholder="User name" id="username" required="" onblur="validateUsername()">
+                        <span class="sp" id="usererror" style="display:none">username should be 6-15 length</span>
+                        <input type="email" name="email" placeholder="Email" required="" id="email" onblur="validateEmail()">
+                        <span class="sp" id="emailerror" style="display:none">enter valid email address</span>
+                        <input type="password" name="pswd" placeholder="Password" required="" id="password" class="pswd" onblur="validatePassword()" onselect="selectedRange()">
+                        <button class="button button1" onclick="showText()" type="button">show</button>
+                        <div style="display:none;" id="show"></div>
+                        <span style="display:none" class="sp" id="passerror">invalid password</span>
+                        <button type="submit">SignUp</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form method="post" action="/login">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="" class="pswd" onselect="selectedRange1()">
+                        <div style="display:none" id="show1"></div>
+                        <button class="button button1" onclick="showText1()" type="button">show</button>
+                        <button type="submit" onclick="submitForm1()">Login</button><br>
+                        <a href="/forgot" style="position:relative;left:90px;">Forgot Password</a>
+
+                    </form>
+                </div>
+        </div>
+        <script type="text/javascript" src="./css/validation.js"></script>
+        <script type="text/javascript" src="./move.js"></script>
+        <script type="text/javascript" src="./css/password.js"></script>
+        
+    </body>
+    </html>
+    <!--</body>
+       
+    </html>-->
+    
